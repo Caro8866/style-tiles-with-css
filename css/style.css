@@ -1,8 +1,6 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://use.typekit.net/pex7jug.css");
 
 * {
   box-sizing: border-box;
@@ -14,24 +12,23 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
+  --bg-color: #fbfefb;
 
-  /* Colour Swatches */
   --orange-colour: #e5562b;
   --yellow-colour: #f9931e;
   --green-colour: #c3a61e;
   --purple-colour: #a775d2;
   --red-colour: #c31e1e;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --primary-font: "cooper-black-std", serif;
+  --secondary-font: "Avenir", serif;
+  --main-text-color: #141115;
 
   --white-space: 1rem;
 }
-
+body {
+  background-color: var(--bg-color);
+}
 button {
   transition: all 3s;
 }
@@ -41,21 +38,16 @@ a {
 }
 
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  background-color: var(--red-colour);
+  transform: scale(1.1);
 }
 
 button:active {
-  background-color: var(--bg-color);
+  background-color: var(--yellow-colour);
 }
 
-a:hover {
-  color: var(--link-hover-color);
-  font-size: 4rem;
-}
 html {
   font-size: 100%;
-  font-family: var(--primary-font);
 }
 
 img {
@@ -71,6 +63,10 @@ footer {
   padding: calc(2 * var(--white-space));
 }
 
+header {
+  background-color: var(--orange-colour);
+  background-size: cover;
+}
 .full-width {
   background: var(--bg-color);
   color: white;
@@ -78,8 +74,8 @@ footer {
 }
 
 .header-wrapper h1 {
+  font-family: var(--primary-font);
   font-size: 3rem;
-  text-transform: uppercase;
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
@@ -87,19 +83,16 @@ footer {
 }
 
 .header-wrapper h2 {
+  font-family: var(--secondary-font);
   font-size: 1.6em;
   color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
+  font-weight: bolder;
   margin: var(--white-space) 0;
 }
 
 .header-wrapper h3 {
+  font-family: var(--secondary-font);
   font-size: 1.2rem;
-  font-style: italic;
-}
-
-.header-wrapper h4 {
-  font-size: 0.8rem;
 }
 
 main {
@@ -111,7 +104,7 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
+  font-family: var(--secondary-font);
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -151,6 +144,7 @@ ul li:last-child {
 .color-swatch-5 {
   background-color: var(--red-colour);
 }
+
 .textures li {
   height: 30vw;
   width: 40%;
@@ -186,21 +180,19 @@ ul li:last-child {
 button {
   padding: 1rem;
   border-radius: 4px;
-  background: var(--link-color);
+  background: var(--orange-colour);
   text-align: center;
   text-decoration: none;
   font: bold 1.25em/1 var(--primary-font);
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 0 0; /* 22S - 0 margin-bottom mobile */
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--green-colour);
 }
 
 button:focus,
@@ -217,11 +209,12 @@ button:focus-within {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: var(--primary-font);
 }
 
 .h2-sample {
   font-family: var(--secondary-font);
-  font-style: italic;
+  font-weight: bolder;
   font-size: 1.25rem;
 }
 
@@ -247,6 +240,11 @@ a {
   transition: all 0.2s;
 }
 
+a:hover {
+  color: var(--link-hover-color);
+  font-size: 3rem;
+}
+
 p[class*="font-details-"] {
   margin-top: 0.5rem;
   margin-bottom: calc(2 * var(--white-space));
@@ -257,15 +255,19 @@ p[class*="font-details-"] {
 
 .adjectives ul {
   font-size: 2rem;
-  opacity: 0.5;
 }
 
 .adjectives ul {
   flex-direction: column;
 }
-
+.adjectives li {
+  font-family: var(--primary-font);
+  color: var(--color-5);
+  font-weight: bold;
+}
 footer {
   font-style: italic;
+  background-color: var(--color-4);
 }
 
 @media (min-width: 800px) {
