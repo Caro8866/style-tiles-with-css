@@ -17,8 +17,13 @@ use the fonts in other ways in the font hierarchy etc. */
   --bg-color: red;
   --link-color: green;
   --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+
+  /* Colour Swatches */
+  --orange-colour: #e5562b;
+  --yellow-colour: #f9931e;
+  --green-colour: #c3a61e;
+  --purple-colour: #a775d2;
+  --red-colour: #c31e1e;
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Droid Serif", serif;
@@ -128,25 +133,24 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: var(--orange-colour);
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: var(--yellow-colour);
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: var(--green-colour);
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: var(--purple-colour);
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: var(--red-colour);
 }
-
 .textures li {
   height: 30vw;
   width: 40%;
@@ -154,19 +158,18 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/60p1.jpg);
+  background-size: cover;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(../img/60p2.jpg);
+  background-size: cover;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(../img/60p3.jpg);
+  background-size: cover;
 }
 
 .images ul {
